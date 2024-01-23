@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1er Trimestre</title>
+
+    <!-- Fuentes de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Dirt&display=swap"
+        rel="stylesheet">
+
+    <!-- Mis estilos css -->
+    <link rel="stylesheet" href="../../../css/style.css">
+
+    <!-- iconos de Font Awesome -->
+    <script src="https://kit.fontawesome.com/311fb8a6ed.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main>
+        <section class="main main-Trimestres" id="main-section">
+            <div class="encabezado">
+                <h1><span>Elije</span> un numero del <span>1 al 10</span></h1>
+                <img src="../../../img/General-Trimestres/personaje-pregunta.png">
+                <img class="uno" src="../../../img/General-Trimestres/interrogacion.png" alt="">
+                <img class="dos" src="../../../img/General-Trimestres/interrogacion.png" alt="">
+            </div>
+            <div class="botones">
+                <a href="#" onclick="pregunta('b1','p1')" id="b1">1</a>
+                <a href="#" onclick="pregunta('b2','p2')" id="b2">2</a>
+                <a href="#" onclick="pregunta('b3','p3')" id="b3">3</a>
+                <a href="#" onclick="pregunta('b4','p4')" id="b4">4</a>
+                <a href="#" onclick="pregunta('b5','p5')" id="b5">5</a>
+                <a href="#" onclick="pregunta('b6','p6')" id="b6">6</a>
+                <a href="#" onclick="pregunta('b7','p7')" id="b7">7</a>
+                <a href="#" onclick="pregunta('b8','p8')" id="b8">8</a>
+                <a href="#" onclick="pregunta('b9','p9')" id="b9">9</a>
+                <a href="#" onclick="pregunta('b10','p10')" id="b10">10</a>
+            </div>
+            <div class="volver">
+                <a href="../../1erTrimestre/1erTrimestre.html"><i class="fa-solid fa-arrow-left"></i></a>
+                <a href="../../../index.html"><i class="fa-solid fa-circle-xmark"></i></a>
+            </div>
+        </section>
+
+        <!-- Pantallas de Preguntas -->
+
+        <!-- pregunta 1 -->
+        <article style="display: none;" class="main preguntas" id="p1">
+            <div>
+                <h2>1. ¿Cuál de los siguientes aspectos hay que considerar para exponer un tema? </h2>
+                <ul>
+                    <li><button onclick="victoria('p1')">Elegir un tema de interés para mí y para la mayoría. </button></li>
+                    <li><button id="1" onclick="gameOver('p1','1')">Elegir un tema que solo me interese a mí.
+                    </button></li>
+                    <li><button id="2" onclick="gameOver('p1', '2')">Elegir un tema aburrido</button></li>
+                    <li><button id="3" onclick="gameOver('p1', '3')">Elegir un tema de moda. 
+                    </button></li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 2 -->
+        <article style="display: none;" class="main preguntas" id="p2">
+            <div>
+                <h2>2. Proceso para investigar información relacionada con el tema a exponer </h2>
+                <ul>
+                    <li><button id="4" onclick="gameOver('p2', '4')">
+                        Inventar preguntas al azar. </button></li>
+                    <li><button onclick="victoria('p2')">Plantear preguntas que guíen la
+                        búsqueda.
+                        
+                    </button></li>
+                    <li><button id="5" onclick="gameOver('p2', '5')">
+                        imprimir todo lo relacionado con el tema que vamos a exponer </button></li>
+                    <li><button id="6" onclick="gameOver('p2', '6')">Consultar en una sola fuente
+                    </button></li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 3 -->
+        <article style="display: none;" class="main preguntas" id="p3">
+            <div>
+                <h2>3. ¿Cuál es la abreviatura correcta de avenida?</h2>
+                
+                <ul>
+                    <li><button id="7" onclick="gameOver('p3','7')">Ave</button></li>
+                    <li><button id="8" onclick="gameOver('p3', '8')">Avnd.</button></li>
+                    <li><button id="9" onclick="gameOver('p3', '9')">Ada.</button></li>
+                    <li><button onclick="victoria('p3')">Av.</button></li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 4 -->
+        <article style="display: none;" class="main preguntas" id="p4">
+            <div>
+                <h2>4. Selecciona las palabras de la misma familia léxica</h2>
+                <ul>
+                    <li><button id="10" onclick="gameOver('p4', '10')">Cuchillo, cuchara, tenedor
+                    </button></li>
+                    <li><button id="11" onclick="gameOver('p4', '11')">Mesa, silla, mantel</button></li>
+                    <li><button onclick="victoria('p4')">Lima, limón, limonada.</button></li>
+                    <li><button id="12" onclick="gameOver('p4', '12')">Zapatos, tenis, calcetín. 
+                    </button></li>
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 5 -->
+        <article style="display: none;" class="main preguntas" id="p5">
+            <div>
+                <h2>5. Son ejemplos de siglas</h2>
+                <ul>
+                    <li><button id="13" onclick="gameOver('p5','13')">Blvd. Av. Cjn. Col</button></li>
+                    <li><button onclick="victoria('p5')">SSA, UNAM, IMSS
+                    </button></li>
+                    <li><button id="14" onclick="gameOver('p5', '14')">Norte, Sur, Este, Oeste
+                    </button></li>
+                    <li><button id="15" onclick="gameOver('p5', '15')">Izquierda, derecha</button></li>
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 6 -->
+        <article style="display: none;" class="main preguntas" id="p6">
+            <div>
+                <h2>6. ¿Qué es un refrán?</h2>
+                
+                <ul>
+                    li><button id="16" onclick="gameOver('p6', '16')">Una frase que es difícil entender
+                    </button></li>
+                    <li><button id="17" onclick="gameOver('p6', '17')">Una frase que describe una cosa para
+                        que alguien adivine de qué se trata</button></li>
+                    <li><button id="18" onclick="gameOver('p6', '18')">Una oración que tiene rimas</button></li>
+                    <li><button onclick="victoria('p6')">Una frase u oración que contiene algún
+                        consejo sobre la vida cotidiana.
+                        </button></li>
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 7 -->
+        <article style="display: none;" class="main preguntas" id="p7">
+            <div>
+                <h2>7. ¿Qué tipo de texto es el siguiente? Camarón que se duerme se lo lleva la corriente </h2>
+                
+                <ul>
+                    <li><button onclick="victoria('p7')">Un refrán</button></li>
+                    <li><button id="19" onclick="gameOver('p7','19')">Una adivinanza</button></li>
+                    <li><button id="20" onclick="gameOver('p7', '20')">Un chiste</button></li>
+                    <li><button id="21" onclick="gameOver('p7', '21')">Un trabalenguas</button></li>
+                    
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 8 -->
+        <article style="display: none;" class="main preguntas" id="p8">
+            <div>
+                <h2>8. ¿Cuál es el significado implícito del siguiente refrán? Árbol que crece torcido, nunca endereza</h2>
+                
+                <ul>
+                    <li><button id="22" onclick="gameOver('p8','22')">No se puede enderezar el tronco de los
+                        árboles.
+                        </button></li>
+                    <li><button id="23" onclick="gameOver('p8', '23')">No debemos dejar que un árbol crezca</button></li>
+                    <li><button id="24" onclick="gameOver('p8', '24')">Nunca enderezar un árbol torcido</button></li>
+                    <li><button onclick="victoria('p8')">Alguien que se desvíe de lo correcto en
+                        sus primeras etapas de vida, no podrá
+                        corregirse posteriormente</button></li>
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 9 -->
+        <article style="display: none;" class="main preguntas" id="p9">
+            <div>
+                <h2>9. Es la reina de los mares, su dentadura es muy buena, y por no ir nunca vacía, siempre dicen que va llena. ¿Qué tipo de juego de palabras es el texto anterior? </h2>
+              
+                <ul>
+                    <li><button onclick="victoria('p9')">Una adivinanza</button></li>
+                    <li><button id="25" onclick="gameOver('p9','25')">Un chiste</button></li>
+                    <li><button id="26" onclick="gameOver('p9', '26')">Un trabalenguas</button></li>
+                    <li><button id="27" onclick="gameOver('p9', '27')">Una leyenda</button></li>
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 10 -->
+        <article style="display: none;" class="main preguntas" id="p10">
+            <div>
+                <h2>10. Compré pocas copas, pocas copas compré, como compré pocas copas, pocas copas pagaré ¿Qué tipo de juego de palabras es el texto anterior? </h2>
+                <ul>
+                    <li><button id="28" onclick="gameOver('p10', '28')"> Un chiste
+                    </button></li>
+                    <li><button id="29" onclick="gameOver('p10', '29')">Una adivinanza 
+                    </button></li>
+                    <li><button id="30" onclick="gameOver('p10', '30')">Una leyenda
+                    </button></li>
+                    <li><button onclick="victoria('p10')">Un trabalenguas
+                    </button></li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- Fin de Pantalla de preguntas -->
+
+
+
+
+
+        <!-- Pantalla de Game Over -->
+        <article style="display: none;" class="gameOver" id="gameOver">
+            <img src="../../../img/General-Trimestres/personaje-pregunta.png" alt="">
+            <p>Sigue Intentando <i class="fa-regular fa-face-frown"></i></p>
+            <button onclick="volverResponder()">Intentalo de Nuevo</button>
+        </article>
+        <!-- Fin de Pantalla Game Over -->
+
+
+        <!-- Pantalla de Victoria -->
+        <article style="display: none;" class="win" id="victoria">
+            <img src="../../../img/General-Trimestres/batman.png" alt="">
+            <p>¡BatiGenial!</p>
+            <button onclick="volverMenu()">Menu</button>
+        </article>
+        <!-- Fin de pantalla de Victoria -->
+
+    </main>
+    <!-- Agregando los scripts -->
+    <script src="../../../JS/main.js"></script>
+</body>
+
+</html>

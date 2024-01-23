@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1er Trimestre</title>
+
+    <!-- Fuentes de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Dirt&display=swap"
+        rel="stylesheet">
+
+    <!-- Mis estilos css -->
+    <link rel="stylesheet" href="../../../css/style.css">
+
+    <!-- iconos de Font Awesome -->
+    <script src="https://kit.fontawesome.com/311fb8a6ed.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main>
+        <section class="main main-Trimestres" id="main-section">
+            <div class="encabezado">
+                <h1><span>Elije</span> un numero del <span>1 al 10</span></h1>
+                <img src="../../../img/General-Trimestres/personaje-pregunta.png">
+                <img class="uno" src="../../../img/General-Trimestres/interrogacion.png" alt="">
+                <img class="dos" src="../../../img/General-Trimestres/interrogacion.png" alt="">
+            </div>
+            <div class="botones">
+                <a href="#" onclick="pregunta('b1','p1')" id="b1">1</a>
+                <a href="#" onclick="pregunta('b2','p2')" id="b2">2</a>
+                <a href="#" onclick="pregunta('b3','p3')" id="b3">3</a>
+                <a href="#" onclick="pregunta('b4','p4')" id="b4">4</a>
+                <a href="#" onclick="pregunta('b5','p5')" id="b5">5</a>
+                <a href="#" onclick="pregunta('b6','p6')" id="b6">6</a>
+                <a href="#" onclick="pregunta('b7','p7')" id="b7">7</a>
+                <a href="#" onclick="pregunta('b8','p8')" id="b8">8</a>
+                <a href="#" onclick="pregunta('b9','p9')" id="b9">9</a>
+                <a href="#" onclick="pregunta('b10','p10')" id="b10">10</a>
+            </div>
+            <div class="volver">
+                <a href="../../1erTrimestre/1erTrimestre.html"><i class="fa-solid fa-arrow-left"></i></a>
+                <a href="../../../index.html"><i class="fa-solid fa-circle-xmark"></i></a>
+            </div>
+        </section>
+
+        <!-- Pantallas de Preguntas -->
+
+        <!-- pregunta 1 -->
+        <article style="display: none;" class="main preguntas" id="p1">
+            <div>
+                <h2>1. ¿Cuáles fueron las tres grandes áreas culturales del México antiguo?</h2>
+                <ul>
+                    <li><button onclick="victoria('p1')">Agricultura, Nómadas, Sedentarios
+                    </button></li>
+                    <li><button id="1" onclick="gameOver('p1','1')">Sudamérica, Norteamérica,
+                        Centroamérica.
+                        </button></li>
+                    <li><button id="2" onclick="gameOver('p1', '2')">Aridoamérica, Oasisamérica,
+                        Mesoamérica</button></li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 2 -->
+        <article style="display: none;" class="main preguntas" id="p2">
+            <div>
+                <h2>2.. En un principio estos pobladores vivían de la caza y la recolección, por lo que tenían que trasladarse continuamente de un lugar a otro</h2>
+                <ul>
+                    
+                    <li><button onclick="victoria('p2')">
+                        Pobladores nomadas
+                    </button></li>
+                    <li><button id="5" onclick="gameOver('p2', '5')">
+                        Pobladores sedentarios </button></li>
+                    <li><button id="6" onclick="gameOver('p2', '6')">Pobladores migrantes
+                    </button></li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 3 -->
+        <article style="display: none;" class="main preguntas" id="p3">
+            <div>
+                <h2>3. Esta región del México antiguo, poseía un territorio semiárido, de clima caluroso, en el que las lluvias son escasas todo el año. </h2>
+                
+                <ul>
+                    <li><button id="7" onclick="gameOver('p3','7')">Aridoamérica
+                    </button></li>
+                    <li><button id="8" onclick="gameOver('p3', '8')">Mesoamérica
+                    </button></li>
+                    <li><button onclick="victoria('p3')">Oasisamérica
+                    </button></li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 4 -->
+        <article style="display: none;" class="main preguntas" id="p4">
+            <div>
+                <h2>4. Esta área del México antiguo tenía varios tipos de clima y abundancia de ríos y lagunas lo que hizo favorable la agricultura.</h2>
+                <ul>
+                    <li><button id="11" onclick="gameOver('p4', '11')">Aridoamérica
+                    </button></li>
+                    <li><button onclick="victoria('p4')">Mesoamérica
+                    </button></li>
+                    <li><button id="12" onclick="gameOver('p4', '12')">Oasisamérica
+
+                    </button></li>
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 5 -->
+        <article style="display: none;" class="main preguntas" id="p5">
+            <div>
+                <h2>5. Fue una región del México antiguo, árida en la que vivieron sociedades dedicadas a la caería y a la recolección de frutos y vegetales </h2>
+                <ul>
+                    <li><button onclick="victoria('p5')">Aridoamérica.
+                    </button></li>
+                    <li><button id="14" onclick="gameOver('p5', '14')">Oasisamérica.
+                    </button></li>
+                    <li><button id="15" onclick="gameOver('p5', '15')">Mesoamérica.
+                    </button></li>
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 6 -->
+        <article style="display: none;" class="main preguntas" id="p6">
+            <div>
+                <h2>6.¿En qué año se cree que inició el cultivo del maíz?</h2>
+                
+                <ul>
+                    <li><button id="17" onclick="gameOver('p6', '17')">Hace 100 años
+                    </button></li>
+                    <li><button id="18" onclick="gameOver('p6', '18')">Alrededor del año 500 a.C.
+                    </button></li>
+                    <li><button onclick="victoria('p6')">Alrededor del año 5000 a.C.
+                    </button></li>
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 7 -->
+        <article style="display: none;" class="main preguntas" id="p7">
+            <div>
+                <h2>7. Dibujos sobre rocas que representaban ideas de caza y de guerra y de actividades cotidianas de los grupos que las realizaban.</h2>
+                
+                <ul>
+                    <li><button onclick="victoria('p7')">Pinturas rupestres</button></li>
+                    <li><button id="19" onclick="gameOver('p7','19')">Mural</button></li>
+                    <li><button id="20" onclick="gameOver('p7', '20')">Mapas</button></li>
+                    
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 8 -->
+        <article style="display: none;" class="main preguntas" id="p8">
+            <div>
+                <h2>8.¿Lapso de tiempo que abarca el periodo Preclásico?</h2>
+               
+                <ul>
+                    <li><button id="23" onclick="gameOver('p8', '23')">Del año 200 d.C. al 900 d.C.
+                    </button></li>
+                    <li><button id="24" onclick="gameOver('p8', '24')">Del año 900 d.C. al 1521 con la
+                        Conquista de México.
+                        </button></li>
+                    <li><button onclick="victoria('p8')">Del año 2500 a.C. al 200 d.C.
+                    </button></li>
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 9 -->
+        <article style="display: none;" class="main preguntas" id="p9">
+            <div>
+                <h2>9. ¿Lapso de tiempo que abarca el periodo Clásico?</h2>
+                
+                <ul>
+                    <li><button onclick="victoria('p9')">Del año 900 d.C. al 1521 con la
+                        Conquista de México.
+                        </button></li>
+                    <li><button id="25" onclick="gameOver('p9','25')">Del año 2500 a.C. al 200 d.C.
+                    </button></li>
+                    <li><button id="26" onclick="gameOver('p9', '26')">Del año 200 d.C. al 900 d.C
+                    </button></li>
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 10 -->
+        <article style="display: none;" class="main preguntas" id="p10">
+            <div>
+                <h2>10. ¿Lapso de tiempo que abarca el periodo Posclásico? </h2>
+                <ul>
+                    <li><button id="28" onclick="gameOver('p10', '28')">Del año 2500 a.C. al 200 d.C.
+                    </button></li>
+                    <li><button id="29" onclick="gameOver('p10', '29')">Del año 900 d.C. al 1521 con la Conquista de México.
+                    </button></li>
+                    <li><button onclick="victoria('p10')">Del año 200 d.C. al 900 d.C.
+                    </button></li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- Fin de Pantalla de preguntas -->
+
+
+
+
+
+        <!-- Pantalla de Game Over -->
+        <article style="display: none;" class="gameOver" id="gameOver">
+            <img src="../../../img/General-Trimestres/personaje-pregunta.png" alt="">
+            <p>Sigue Intentando <i class="fa-regular fa-face-frown"></i></p>
+            <button onclick="volverResponder()">Intentalo de Nuevo</button>
+        </article>
+        <!-- Fin de Pantalla Game Over -->
+
+
+        <!-- Pantalla de Victoria -->
+        <article style="display: none;" class="win" id="victoria">
+            <img src="../../../img/General-Trimestres/batman.png" alt="">
+            <p>¡BatiGenial!</p>
+            <button onclick="volverMenu()">Menu</button>
+        </article>
+        <!-- Fin de pantalla de Victoria -->
+
+    </main>
+    <!-- Agregando los scripts -->
+    <script src="../../../JS/main.js"></script>
+</body>
+
+</html>

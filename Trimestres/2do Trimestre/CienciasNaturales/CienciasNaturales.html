@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1er Trimestre</title>
+
+    <!-- Fuentes de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Dirt&display=swap"
+        rel="stylesheet">
+
+    <!-- Mis estilos css -->
+    <link rel="stylesheet" href="../../../css/style.css">
+
+    <!-- iconos de Font Awesome -->
+    <script src="https://kit.fontawesome.com/311fb8a6ed.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main>
+        <section class="main main-Trimestres" id="main-section">
+            <div class="encabezado">
+                <h1><span>Elije</span> un numero del <span>1 al 10</span></h1>
+                <img src="../../../img/General-Trimestres/personaje-pregunta.png">
+                <img class="uno" src="../../../img/General-Trimestres/interrogacion.png" alt="">
+                <img class="dos" src="../../../img/General-Trimestres/interrogacion.png" alt="">
+            </div>
+            <div class="botones">
+                <a href="#" onclick="pregunta('b1','p1')" id="b1">1</a>
+                <a href="#" onclick="pregunta('b2','p2')" id="b2">2</a>
+                <a href="#" onclick="pregunta('b3','p3')" id="b3">3</a>
+                <a href="#" onclick="pregunta('b4','p4')" id="b4">4</a>
+                <a href="#" onclick="pregunta('b5','p5')" id="b5">5</a>
+                <a href="#" onclick="pregunta('b6','p6')" id="b6">6</a>
+                <a href="#" onclick="pregunta('b7','p7')" id="b7">7</a>
+                <a href="#" onclick="pregunta('b8','p8')" id="b8">8</a>
+                <a href="#" onclick="pregunta('b9','p9')" id="b9">9</a>
+                <a href="#" onclick="pregunta('b10','p10')" id="b10">10</a>
+            </div>
+            <div class="volver">
+                <a href="../../2do Trimestre/2doTrimestre.html"><i class="fa-solid fa-arrow-left"></i></a>
+                <a href="../../../index.html"><i class="fa-solid fa-circle-xmark"></i></a>
+            </div>
+        </section>
+
+        <!-- Pantallas de Preguntas -->
+
+        <!-- pregunta 1 -->
+        <article style="display: none;" class="main preguntas" id="p1">
+            <div>
+                <h2>1. ¿Cómo se llama al proceso en el que la hembra de los mamíferos protege y nutre a sus descendientes en el útero y la placenta? </h2>
+                <ul>
+                    <li><button onclick="victoria('p1')">Gestacion</button></li>
+                    <li><button id="1" onclick="gameOver('p1','1')">Polinizacion</button></li>
+                    <li><button id="2" onclick="gameOver('p1', '2')">Cortejo</button></li>
+                    <li><button id="3" onclick="gameOver('p1', '3')">Incubacion</button></li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 2 -->
+        <article style="display: none;" class="main preguntas" id="p2">
+            <div>
+                <h2>2. ¿Cómo se llama el proceso en el que las aves y reptiles protegen a sus crías mientras se desarrollan dentro del huevo?</h2>
+                <ul>
+                    
+                    <li><button onclick="victoria('p2')">incubacion</button></li>
+                    <li><button id="5" onclick="gameOver('p2', '5')">Gestacion</button></li>
+                    <li><button id="6" onclick="gameOver('p2', '6')">Polinizacion</button></li>
+                    <li><button id="4" onclick="gameOver('p2', '4')">Cortejo</button></li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 3 -->
+        <article style="display: none;" class="main preguntas" id="p3">
+            <div>
+                <h2>3. Es un ejemplo de bacterias. Si son mezcladas con la leche producen yogur. </h2>
+                
+                <ul>
+                    <li><button id="7" onclick="gameOver('p3','7')">Levaduras</button></li>
+                    <li><button id="8" onclick="gameOver('p3', '8')">Champiñones</button></li>
+                    <li><button id="9" onclick="gameOver('p3', '9')">Microorganismos</button></li>
+                    <li><button onclick="victoria('p3')">Lactobacilos</button></li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 4 -->
+        <article style="display: none;" class="main preguntas" id="p4">
+            <div>
+                <h2>4.¿Cómo se llama a las conductas especiales que tienen los reptiles, aves y mamíferos para elegir y convencer a la pareja elegida?</h2>
+                <ul>
+                    <li><button id="10" onclick="gameOver('p4', '10')">Gestacion</button></li>
+                    <li><button id="11" onclick="gameOver('p4', '11')">Polinizacion</button></li>
+                    <li><button onclick="victoria('p4')">Cortejo</button></li>
+                    <li><button id="12" onclick="gameOver('p4', '12')">Incubacion</button></li>
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 5 -->
+        <article style="display: none;" class="main preguntas" id="p5">
+            <div>
+                <h2>Es un conjunto de seres vivos y condiciones ambientales estrechamente relacionados que comparten un determinado lugar</h2>
+             
+                <ul>
+                    <li><button id="13" onclick="gameOver('p5','13')">Biodiversidad.
+                    </button></li>
+                    <li><button onclick="victoria('p5')">Ecosistema. 
+                    </button></li>
+                    <li><button id="14" onclick="gameOver('p5', '14')">Naturaleza.
+                    </button></li>
+                    <li><button id="15" onclick="gameOver('p5', '15')">Medio ambiente</button></li>
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 6 -->
+        <article style="display: none;" class="main preguntas" id="p6">
+            <div>
+                <h2>6. ¿Cuál es la principal función de los hongos y las bacterias? </h2>
+                
+                <ul>
+                    <li><button id="16" onclick="gameOver('p6','16')">La creación de yogur.
+                    </button></li>
+                    <li><button id="17" onclick="gameOver('p6', '17')">Descomponer los alimentos para causar
+                        enfermedades
+                        </button></li>
+                    <li><button id="18" onclick="gameOver('p6', '18')">Servir como alimento
+                    </button></li>
+                    <li><button onclick="victoria('p6')">Descomponer la materia orgánica para
+                        reintegrarla al ambiente.
+                        </button></li>
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 7 -->
+        <article style="display: none;" class="main preguntas" id="p7">
+            <div>
+                <h2>7. ¿Qué sucede cuando hacemos un consumo excesivo de los recursos como el agua o el suelo?</h2>
+               
+                <ul>
+                    <li><button onclick="victoria('p7')">Se altera el ecosistema y afectamos a
+                        otros seres vivos.
+                        </button></li>
+                    <li><button id="19" onclick="gameOver('p7','19')">La naturaleza produce más agua
+                    </button></li>
+                    <li><button id="20" onclick="gameOver('p7', '20')">Hay agua en exceso, así que no afecta
+                    </button></li>
+                    <li><button id="21" onclick="gameOver('p7', '21')">No sucede nada.
+                    </button></li>
+                    
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 8 -->
+        <article style="display: none;" class="main preguntas" id="p8">
+            <div>
+                <h2>8. ¿Cuáles son los estados físicos de la materia?</h2>
+                
+                <ul>
+                    <li><button id="22" onclick="gameOver('p8','22')">Tierra, Fuego, Aire
+                    </button></li>
+                    <li><button id="23" onclick="gameOver('p8', '23')">Arena, Miel, Leche</button></li>
+                    <li><button id="24" onclick="gameOver('p8', '24')">Dulce, Amargo, Salado</button></li>
+                    <li><button onclick="victoria('p8')">Sólido, Liquido, Gaseoso
+                    </button></li>
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 9 -->
+        <article style="display: none;" class="main preguntas" id="p9">
+            <div>
+                <h2>9. ¿Por qué un cubo de hielo cambia de solido a líquido? </h2>
+                
+                <ul>
+                    <li><button onclick="victoria('p9')">Por el aumento de la temperatura
+                    </button></li>
+                    <li><button id="25" onclick="gameOver('p9','25')">Por el paso del tiempo
+                    </button></li>
+                    <li><button id="26" onclick="gameOver('p9', '26')">Por la contaminación</button></li>
+                    <li><button id="27" onclick="gameOver('p9', '27')">Por la disminución de la temperatura
+                    </button></li>
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 10 -->
+        <article style="display: none;" class="main preguntas" id="p10">
+            <div>
+                <h2>10. Son características de los líquidos, excepto:</h2>
+                <ul>
+                    <li><button id="28" onclick="gameOver('p10', '28')">Tienen volumen definido
+                    </button></li>
+                    <li><button id="29" onclick="gameOver('p10', '29')">Tienen dureza</button></li>
+                    <li><button onclick="victoria('p10')"></button>Toman la forma del recipiente que los contiene.</li>
+                    <li><button id="30" onclick="gameOver('p10', '30')">No sé comprimen</button></li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- Fin de Pantalla de preguntas -->
+
+
+
+
+
+        <!-- Pantalla de Game Over -->
+        <article style="display: none;" class="gameOver" id="gameOver">
+            <img src="../../../img/General-Trimestres/personaje-pregunta.png" alt="">
+            <p>Sigue Intentando <i class="fa-regular fa-face-frown"></i></p>
+            <button onclick="volverResponder()">Intentalo de Nuevo</button>
+        </article>
+        <!-- Fin de Pantalla Game Over -->
+
+
+        <!-- Pantalla de Victoria -->
+        <article style="display: none;" class="win" id="victoria">
+            <img src="../../../img/General-Trimestres/batman.png" alt="">
+            <p>¡BatiGenial!</p>
+            <button onclick="volverMenu()">Menu</button>
+        </article>
+        <!-- Fin de pantalla de Victoria -->
+
+    </main>
+    <!-- Agregando los scripts -->
+    <script src="../../../JS/main.js"></script>
+</body>
+
+</html>

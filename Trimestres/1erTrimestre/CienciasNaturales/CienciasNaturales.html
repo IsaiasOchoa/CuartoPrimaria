@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1er Trimestre</title>
+
+    <!-- Fuentes de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Dirt&display=swap"
+        rel="stylesheet">
+
+    <!-- Mis estilos css -->
+    <link rel="stylesheet" href="../../../css/style.css">
+
+    <!-- iconos de Font Awesome -->
+    <script src="https://kit.fontawesome.com/311fb8a6ed.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main>
+        <section class="main main-Trimestres" id="main-section">
+            <div class="encabezado">
+                <h1><span>Elije</span> un numero del <span>1 al 10</span></h1>
+                <img src="../../../img/General-Trimestres/personaje-pregunta.png">
+                <img class="uno" src="../../../img/General-Trimestres/interrogacion.png" alt="">
+                <img class="dos" src="../../../img/General-Trimestres/interrogacion.png" alt="">
+            </div>
+            <div class="botones">
+                <a href="#" onclick="pregunta('b1','p1')" id="b1">1</a>
+                <a href="#" onclick="pregunta('b2','p2')" id="b2">2</a>
+                <a href="#" onclick="pregunta('b3','p3')" id="b3">3</a>
+                <a href="#" onclick="pregunta('b4','p4')" id="b4">4</a>
+                <a href="#" onclick="pregunta('b5','p5')" id="b5">5</a>
+                <a href="#" onclick="pregunta('b6','p6')" id="b6">6</a>
+                <a href="#" onclick="pregunta('b7','p7')" id="b7">7</a>
+                <a href="#" onclick="pregunta('b8','p8')" id="b8">8</a>
+                <a href="#" onclick="pregunta('b9','p9')" id="b9">9</a>
+                <a href="#" onclick="pregunta('b10','p10')" id="b10">10</a>
+            </div>
+            <div class="volver">
+                <a href="../../1erTrimestre/1erTrimestre.html"><i class="fa-solid fa-arrow-left"></i></a>
+                <a href="../../../index.html"><i class="fa-solid fa-circle-xmark"></i></a>
+            </div>
+        </section>
+
+        <!-- Pantallas de Preguntas -->
+
+        <!-- pregunta 1 -->
+        <article style="display: none;" class="main preguntas" id="p1">
+            <div>
+                <h2>1. ¿Qué es la reproducción? </h2>
+                <ul>
+                    <li><button onclick="victoria('p1')">La capacidad de los seres vivos para
+                        engendrar nuevos individuos
+                        </button></li>
+                    <li><button id="1" onclick="gameOver('p1','1')">La capacidad de los seres vivos para ver películas y videos.
+                        </button></li>
+                    <li><button id="2" onclick="gameOver('p1', '2')">La capacidad de los seres vivos para hablar y comunicarse</button></li>
+                    <li><button id="3" onclick="gameOver('p1', '3')">Reproducir música</button></li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 2 -->
+        <article style="display: none;" class="main preguntas" id="p2">
+            <div>
+                <h2>2. ¿Por qué es importante la reproducción?</h2>
+                <ul>
+                    
+                    <li><button onclick="victoria('p2')">Porque gracias a este proceso se preservan
+                        las especies.
+                        </button></li>
+                    <li><button id="5" onclick="gameOver('p2', '5')">Porque es indispensable para la diversión de las personas.
+                        </button></li>
+                    <li><button id="6" onclick="gameOver('p2', '6')">Porque nos permite comunicarnos eficientemente
+                        </button></li>
+                    <li><button id="4" onclick="gameOver('p2', '4')">Porque fomenta la cultura
+                    </button></li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 3 -->
+        <article style="display: none;" class="main preguntas" id="p3">
+            <div>
+                <h2>3. Conjunto de órganos internos y externos del sistema sexual que nos permiten saber si somos niños o niñas. </h2>
+                
+                <ul>
+                    <li><button id="7" onclick="gameOver('p3','7')">La barba y el bigote.
+                    </button></li>
+                    <li><button id="8" onclick="gameOver('p3', '8')">Tener el pelo largo o corto.
+                    </button></li>
+                    <li><button id="9" onclick="gameOver('p3', '9')">Usar pantalones o faldas
+                    </button></li>
+                    <li><button onclick="victoria('p3')">Caracteres sexuales primarios</button></li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 4 -->
+        <article style="display: none;" class="main preguntas" id="p4">
+            <div>
+                <h2>4. Están constituidos por las formas físicas externas que hacen diferentes a mujeres y hombres </h2>
+                <ul>
+                    <li><button id="10" onclick="gameOver('p4', '10')">Ser fuerte y musculoso</button></li>
+                    <li><button id="11" onclick="gameOver('p4', '11')">Usar maquillaje y tener el pelo largo.
+                    </button></li>
+                    <li><button onclick="victoria('p4')">Caracteres sexuales secundarios</button></li>
+                    <li><button id="12" onclick="gameOver('p4', '12')">Usar pantalones o faldas.
+                    </button></li>
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 5 -->
+        <article style="display: none;" class="main preguntas" id="p5">
+            <div>
+                <h2>El sistema sexual del hombre está conformado por:</h2>
+             
+                <ul>
+                    <li><button id="13" onclick="gameOver('p5','13')">Ovarios, útero, matriz, vagina, Clítoris, labios menores y mayores</button></li>
+                    <li><button onclick="victoria('p5')">Pene, testículos, conductos
+                        deferentes, próstata y vesículas seminales.
+                        </button></li>
+                    <li><button id="14" onclick="gameOver('p5', '14')">Barba, bigote y músculos</button></li>
+                    <li><button id="15" onclick="gameOver('p5', '15')">Ojos, nariz y boca.
+                    </button></li>
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 6 -->
+        <article style="display: none;" class="main preguntas" id="p6">
+            <div>
+                <h2>6. El sistema sexual de la mujer está conformado por:</h2>
+                
+                <ul>
+                    <li><button id="16" onclick="gameOver('p6','16')">Pene, testículos, conductos deferentes,
+                        próstata y vesículas seminales.
+                        </button></li>
+                    <li><button id="17" onclick="gameOver('p6', '17')">Maquillaje, pelo largo y vestidos.
+                    </button></li>
+                    <li><button id="18" onclick="gameOver('p6', '18')">Ojos, boca, y labios</button></li>
+                    <li><button onclick="victoria('p6')">Ovarios, útero, matriz, vagina, clítoris,
+                        labios menores y mayores
+                        </button></li>
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 7 -->
+        <article style="display: none;" class="main preguntas" id="p7">
+            <div>
+                <h2>7. ¿Cuál es la función del sistema nervioso?</h2>
+               
+                <ul>
+                    <li><button onclick="victoria('p7')">SProcesar la información del medio
+                        que nos rodea y emitir una
+                        respuesta.
+                        </button></li>
+                    <li><button id="19" onclick="gameOver('p7','19')">Prepararnos para realizar una
+                        exposición</button></li>
+                    <li><button id="20" onclick="gameOver('p7', '20')">Permite mantenernos erguidos.
+                    </button></li>
+                    <li><button id="21" onclick="gameOver('p7', '21')">Protegernos de enfermedades
+                    </button></li>
+                    
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 8 -->
+        <article style="display: none;" class="main preguntas" id="p8">
+            <div>
+                <h2>8. ¿El siguiente es un ejemplo de una de las funciones que controla el sistema nervioso? </h2>
+                
+                <ul>
+                    <li><button id="22" onclick="gameOver('p8','22')">Si se hace tarde nos apuramos para llegar
+                        a tiempo.
+                        </button></li>
+                    <li><button id="23" onclick="gameOver('p8', '23')">Si tenemos ganas de bailar, vamos a una
+                        discoteca</button></li>
+                    <li><button id="24" onclick="gameOver('p8', '24')">Si queremos un refresco vamos a la tienda</button></li>
+                    <li><button onclick="victoria('p8')">Si sentimos sed, apetito, frio, hace que
+                        reaccionemos y entonces bebemos,
+                        comemos y nos cubrimos</button></li>
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 9 -->
+        <article style="display: none;" class="main preguntas" id="p9">
+            <div>
+                <h2>9. Está conformado por corazón, sangre,arterias, vasos capilares y venas, su función es llevar la sangre a todo el cuerpo </h2>
+                
+                <ul>
+                    <li><button onclick="victoria('p9')">Aparato circulatorio</button></li>
+                    <li><button id="25" onclick="gameOver('p9','25')">Aparato digestivo</button></li>
+                    <li><button id="26" onclick="gameOver('p9', '26')">Sistema muscular</button></li>
+                    <li><button id="27" onclick="gameOver('p9', '27')">Sistema nervioso</button></li>
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 10 -->
+        <article style="display: none;" class="main preguntas" id="p10">
+            <div>
+                <h2>10. Son compuestos venenosos que causan daño al organismo y que existen en forma de polvos, gases y líquidos.</h2>
+                <ul>
+                    <li><button id="28" onclick="gameOver('p10', '28')">Contaminación del ambiente.
+                    </button></li>
+                    <li><button id="29" onclick="gameOver('p10', '29')">Comida industrializada</button></li>
+                    <li><button onclick="victoria('p10')">Sustancias tóxicas</button>
+                    </li>
+                    <li><button id="30" onclick="gameOver('p10', '30')">Refrescos y frituras</button></li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- Fin de Pantalla de preguntas -->
+
+
+
+
+
+        <!-- Pantalla de Game Over -->
+        <article style="display: none;" class="gameOver" id="gameOver">
+            <img src="../../../img/General-Trimestres/personaje-pregunta.png" alt="">
+            <p>Sigue Intentando <i class="fa-regular fa-face-frown"></i></p>
+            <button onclick="volverResponder()">Intentalo de Nuevo</button>
+        </article>
+        <!-- Fin de Pantalla Game Over -->
+
+
+        <!-- Pantalla de Victoria -->
+        <article style="display: none;" class="win" id="victoria">
+            <img src="../../../img/General-Trimestres/batman.png" alt="">
+            <p>¡BatiGenial!</p>
+            <button onclick="volverMenu()">Menu</button>
+        </article>
+        <!-- Fin de pantalla de Victoria -->
+
+    </main>
+    <!-- Agregando los scripts -->
+    <script src="../../../JS/main.js"></script>
+</body>
+
+</html>

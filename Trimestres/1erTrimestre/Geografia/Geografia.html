@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1er Trimestre</title>
+
+    <!-- Fuentes de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Dirt&display=swap"
+        rel="stylesheet">
+
+    <!-- Mis estilos css -->
+    <link rel="stylesheet" href="../../../css/style.css">
+
+    <!-- iconos de Font Awesome -->
+    <script src="https://kit.fontawesome.com/311fb8a6ed.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main>
+        <section class="main main-Trimestres" id="main-section">
+            <div class="encabezado">
+                <h1><span>Elije</span> un numero del <span>1 al 10</span></h1>
+                <img src="../../../img/General-Trimestres/personaje-pregunta.png">
+                <img class="uno" src="../../../img/General-Trimestres/interrogacion.png" alt="">
+                <img class="dos" src="../../../img/General-Trimestres/interrogacion.png" alt="">
+            </div>
+            <div class="botones">
+                <a href="#" onclick="pregunta('b1','p1')" id="b1">1</a>
+                <a href="#" onclick="pregunta('b2','p2')" id="b2">2</a>
+                <a href="#" onclick="pregunta('b3','p3')" id="b3">3</a>
+                <a href="#" onclick="pregunta('b4','p4')" id="b4">4</a>
+                <a href="#" onclick="pregunta('b5','p5')" id="b5">5</a>
+                <a href="#" onclick="pregunta('b6','p6')" id="b6">6</a>
+                <a href="#" onclick="pregunta('b7','p7')" id="b7">7</a>
+                <a href="#" onclick="pregunta('b8','p8')" id="b8">8</a>
+                <a href="#" onclick="pregunta('b9','p9')" id="b9">9</a>
+                <a href="#" onclick="pregunta('b10','p10')" id="b10">10</a>
+            </div>
+            <div class="volver">
+                <a href="../../1erTrimestre/1erTrimestre.html"><i class="fa-solid fa-arrow-left"></i></a>
+                <a href="../../../index.html"><i class="fa-solid fa-circle-xmark"></i></a>
+            </div>
+        </section>
+
+        <!-- Pantallas de Preguntas -->
+
+        <!-- pregunta 1 -->
+        <article style="display: none;" class="main preguntas" id="p1">
+            <div>
+                <h2>1. ¿Qué son las fronteras?</h2>
+                
+                <ul>
+                    <li><button onclick="victoria('p1')">Los límites territoriales que marcan donde
+                        termina un país y empieza otro</button></li>
+                    <li><button id="1" onclick="gameOver('p1','1')">La extensión territorial de las ciudades.
+                    </button></li>
+                    <li><button id="2" onclick="gameOver('p1', '2')">La cantidad de población que hay en cada
+                        país
+                        </button></li>
+                    <li><button id="3" onclick="gameOver('p1', '3')">Un programa de televisión.
+                    </button></li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 2 -->
+        <article style="display: none;" class="main preguntas" id="p2">
+            <div>
+                <h2>2. ¿Qué son las fronteras naturales?</h2>
+             
+                <ul>
+                    <li><button id="4" onclick="gameOver('p2','4')">Son límites marcados con cercas,
+                        bardas o muros</button></li>
+                    <li><button onclick="victoria('p2')">Son límites con elementos naturales
+                        como ríos, montañas o lagos</button></li>
+                    <li><button id="5" onclick="gameOver('p2', '5')">Son las fronteras más saludables
+                    </button></li>
+                    <li><button id="6" onclick="gameOver('p2', '6')">Son lugares con frio, calor y lluvia</button></li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 3 -->
+        <article style="display: none;" class="main preguntas" id="p3">
+            <div>
+                <h2>3. ¿Qué son las fronteras artificiales?</h2>
+              
+                <ul>
+                    <li><button id="7" onclick="gameOver('p3','7')">Son límites con elementos naturales como
+                        ríos, montañas o lagos</button></li>
+                    <li><button id="8" onclick="gameOver('p3', '8')">Son las fronteras más altas.
+                    </button></li>
+                    <li><button id="9" onclick="gameOver('p3', '9')">Son limitaciones económicas.
+                    </button></li>
+                    <li><button onclick="victoria('p3')">Son límites marcados con cercas, bardas
+                        o muros.
+                        </button></li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 4 -->
+        <article style="display: none;" class="main preguntas" id="p4">
+            <div>
+                <h2>4. ¿Cuál es el nombre oficial de México?</h2>
+              
+                <ul>
+                    <li><button id="10" onclick="gameOver('p4','10')">Estados Mexicanos de América.
+                    </button></li>
+                    <li><button id="11" onclick="gameOver('p4', '11')">Estados Americanos de México.
+                    </button></li>
+                    <li><button onclick="victoria('p4')">Estados Unidos Mexicanos</button></li>
+                    <li><button id="12" onclick="gameOver('p4', '12')">Estados Unidos de México</button></li>
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 5 -->
+        <article style="display: none;" class="main preguntas" id="p5">
+            <div>
+                <h2>5.Nos indica en un mapa cuántas veces se redujo un objeto o lugar para representarlo</h2>
+             
+                <ul>
+                    <li><button id="13" onclick="gameOver('p5','13')">Rosa de los vientos
+                    </button></li>
+                    <li><button onclick="victoria('p5')">Escala.
+                    </button></li>
+                    <li><button id="14" onclick="gameOver('p5', '14')">Coordenadas geográficas</button></li>
+                    <li><button id="15" onclick="gameOver('p5', '15')">Simbología</button></li>
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 6 -->
+        <article style="display: none;" class="main preguntas" id="p6">
+            <div>
+                <h2>6. En un mapa pueden ser: dibujos, líneas, círculos, colores y otras figuras que representan objetos reales o condiciones de un lugar.</h2>
+               
+                <ul>
+                    <li><button id="16" onclick="gameOver('p6','16')">Rosa de los vientos</button></li>
+                    <li><button id="17" onclick="gameOver('p6', '17')">Coordenadas geográficas</button></li>
+                    <li><button id="18" onclick="gameOver('p6', '18')">Escala.
+                    </button></li>
+                    <li><button onclick="victoria('p6')">Simbología.
+                    </li>
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 7 -->
+        <article style="display: none;" class="main preguntas" id="p7">
+            <div>
+                <h2>7. Actual división política de México</h2>
+                
+                <ul>
+                    <li><button onclick="victoria('p7')">32 entidades federativas
+                    </button></li>
+                    <li><button id="19" onclick="gameOver('p7','19')">32 ciudades
+                    </button></li>
+                    <li><button id="20" onclick="gameOver('p7', '20')">4 regiones</button></li>
+                    <li><button id="21" onclick="gameOver('p7', '21')">1224 municipios
+                    </button></li>
+                    
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 8 -->
+        <article style="display: none;" class="main preguntas" id="p8">
+            <div>
+                <h2>8. Aspectos que se consideran para delimitar las regiones de México.</h2>
+                
+                <ul>
+                    <li><button id="22" onclick="gameOver('p8','22')">Fronteras, grupos étnicos, lenguas
+                    </button></li>
+                    <li><button id="23" onclick="gameOver('p8', '23')">Ríos, montañas y lengua</button></li>
+                    <li><button id="24" onclick="gameOver('p8', '24')">Climas, carreteras y relieves.
+                    </button></li>
+                    <li><button onclick="victoria('p8')">Clima, vegetación, relieve y división
+                        política
+                        </button></li>
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 9 -->
+        <article style="display: none;" class="main preguntas" id="p9">
+            <div>
+                <h2>9. Además de la división política, México también se divide en cuatro regiones. ¿Cuáles son?</h2>
+               
+                <ul>
+                    <li><button onclick="victoria('p9')">Norte, Occidental, Sur, Oriental
+                    </button></li>
+                    <li><button id="25" onclick="gameOver('p9','25')">Cálida, fría, templada, árida.
+                    </button></li>
+                    <li><button id="26" onclick="gameOver('p9', '26')">Este, oeste, norte, sur
+                    </button></li>
+                    <li><button id="27" onclick="gameOver('p9', '27')">Selva, Bosque, Pastizal, Matorral
+                    </button></li>
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 10 -->
+        <article style="display: none;" class="main preguntas" id="p10">
+            <div>
+                <h2>10. Son líneas imaginarias horizontales (paralelos) y verticales (meridianos) que nos permiten localizar cualquier lugar sobre la superficie terrestre.</h2>
+                <ul>
+                    <li><button id="28" onclick="gameOver('p10','28')">Rosa de los vientos
+                    </button></li>
+                    <li><button id="29" onclick="gameOver('p10', '29')">Escala.
+                        </button></li>
+                    <li><button onclick="victoria('p10')">Coordenadas geográficas</button></li>
+                    <li><button id="30" onclick="gameOver('p10', '30')">Simbología</button></li>
+                    
+                </ul>
+            </div>
+        </article>
+
+        <!-- Fin de Pantalla de preguntas -->
+
+
+
+
+
+        <!-- Pantalla de Game Over -->
+        <article style="display: none;" class="gameOver" id="gameOver">
+            <img src="../../../img/General-Trimestres/personaje-pregunta.png" alt="">
+            <p>Sigue Intentando <i class="fa-regular fa-face-frown"></i></p>
+            <button onclick="volverResponder()">Intentalo de Nuevo</button>
+        </article>
+        <!-- Fin de Pantalla Game Over -->
+
+
+        <!-- Pantalla de Victoria -->
+        <article style="display: none;" class="win" id="victoria">
+            <img src="../../../img/General-Trimestres/batman.png" alt="">
+            <p>¡BatiGenial!</p>
+            <button onclick="volverMenu()">Menu</button>
+        </article>
+        <!-- Fin de pantalla de Victoria -->
+
+    </main>
+    <!-- Agregando los scripts -->
+    <script src="../../../JS/main.js"></script>
+</body>
+
+</html>
